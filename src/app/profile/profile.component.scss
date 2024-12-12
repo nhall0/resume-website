@@ -1,20 +1,24 @@
+$base-gap: 50px;
+
 .profile-container {
     display: flex;
     flex-direction: row;
-    margin-top: 50px;
+    margin-top: $base-gap;
+    gap: $base-gap;
 }
 
 .profile-info-container {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     flex-direction: column;
+    text-align: right;
+    flex: 1;
 }
 
 .profile-image-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 20px;
+    justify-content: left;
+    fleX: 1;
 }
 
 .large {
@@ -32,13 +36,27 @@
 .pi-linkedin {
     color: #0077B5;
     font-size: 20px;
+    transition: color 0.5s;
+}
+
+.pi-linkedin:hover {
+    color: #00a0dc;
 }
 
 .pi-github {
     color: #ffb07b;
     font-size: 20px;
+    transition: color 0.5s;
+}
+
+.pi-github:hover {
+    color: #ffd8bd;
 }
 
 .pi {
     margin-right: 10px;
+}
+
+.profile-image {
+    border-radius: 50%;
 }
