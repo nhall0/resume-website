@@ -1,0 +1,24 @@
+[
+    {
+        "id": "project1",
+        "title": "Project 1",
+        "description": "This is project 1",
+        "status": "In Progress",
+        "date": "2020-01-01",
+        "image": null,
+        "github": null,
+        "website": null,
+        "technologies": null
+    },
+    {
+        "id": "project2",
+        "title": "Project 2",
+        "description": "This is project 2",
+        "status": "Active",
+        "date": "2020-01-02",
+        "image": null,
+        "github": null,
+        "website": null,
+        "technologies": null
+    }
+]

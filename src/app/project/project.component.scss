@@ -1,0 +1,23 @@
+.project-container {
+    background-color: rgba(240, 248, 255, 0.077);
+    border-radius: 10px;
+    width: 20vw;
+    height: 20vw;
+    transition: background-color 0.5s, width 0.5s, height 0.5s;
+}
+
+.project-container:hover {
+    background-color: rgba(240, 248, 255, 0.114);
+    width: 20.2vw;
+    height: 20.2vw;
+    cursor: pointer;
+}
+
+.project-header {
+    text-align: center;
+    padding: 1vw;
+}
+
+.project-content {
+    padding: 1vw;
+}

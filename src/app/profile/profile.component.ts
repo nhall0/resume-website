@@ -1,15 +1,17 @@
 import { Component } from '@angular/core';
+import { ProjectsComponent } from "../projects/projects.component";
 
 @Component({
   selector: 'app-profile',
   standalone: true,
-  imports: [],
+  imports: [ProjectsComponent],
   templateUrl: './profile.component.html',
   styleUrl: './profile.component.scss'
 })
 export class ProfileComponent {
+  //Profile Information - Should be moved to a service and then to a database.
   name: string = 'Niklas Hallstein';
-  title: string = 'Software Developer';
+  title: string = 'Full-Stack Software Developer';
   email: string = 'niklas@cgcg.biz';
   workplace: string = 'Cyber Guardian Consulting Group';
   position: string = 'Engineer I';
@@ -18,4 +20,6 @@ export class ProfileComponent {
   github: string = 'https://github.com/nhall0'
 
   image: string = this.github + '.png';
+
+  constructor() {}
 }

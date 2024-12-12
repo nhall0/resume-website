@@ -1,1 +1,5 @@
-<p>projects works!</p>
+<div class="projects-container">
+    <ng-container *ngFor="let project of projectsService.projects">
+        <app-project [project]="project"></app-project>
+    </ng-container>
+</div>
