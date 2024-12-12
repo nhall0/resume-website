@@ -1,0 +1,44 @@
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.profile-info-container {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.profile-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.large {
+    font-size: 60px;
+}
+
+.medium {
+    font-size: 30px;
+}
+
+.small {
+    font-size: 20px;
+}
+
+.pi-linkedin {
+    color: #0077B5;
+    font-size: 20px;
+}
+
+.pi-github {
+    color: #ffb07b;
+    font-size: 20px;
+}
+
+.pi {
+    margin-right: 10px;
+}

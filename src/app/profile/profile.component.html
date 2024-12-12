@@ -1,0 +1,16 @@
+<div class="profile-container">
+    <div class="profile-info-container">
+        <span class="large">{{name}}</span>
+        <span class="medium">{{title}}</span>
+        <span class="small"><span class="pi pi-envelope"></span>{{email}}</span>
+        <span class="small"><span class="pi pi-briefcase"></span>{{workplace}}</span>
+        <span class="small"><span class="pi pi-user"></span>{{position}}</span>
+        <div class="links">
+            <a href="{{linkedin}}" target="_blank"><span class="pi pi-linkedin"></span></a>
+            <a href="{{github}}" target="_blank"><span class="pi pi-github"></span></a>
+        </div>
+    </div>
+    <div class="profile-image-container">
+        <img [src]="image" alt="Profile Image">
+    </div>
+</div>

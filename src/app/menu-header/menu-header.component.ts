@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItemComponent } from '../menu-item/menu-item.component';
-import { MenuItem } from '../services/menu.model';
+import { MenuItem } from '../../interfaces/menu.model';
 import { NgFor, NgIf } from '@angular/common';
 
 @Component({

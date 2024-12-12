@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output, OnInit } from '@angular/core';
-import { MenuItem } from '../services/menu.model';
+import { MenuItem } from '../../interfaces/menu.model';
 import { NgIf } from '@angular/common';
 
 @Component({
