@@ -1,0 +1,11 @@
+
+.menu-item {
+    font-size: var(--text-large);
+    color: var(--color-text-primary);
+    transition: color 0.3s;
+}
+
+.menu-item:hover {
+    color: var(--color-text-hover);
+    cursor: pointer;
+}

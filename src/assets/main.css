@@ -1,32 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
+
 html {
     font-size: 14px;
 }
 
 body {
-    min-height: 100vh;
+    height: 100vh;
     max-width: 100vw;
     color: #fff;
-    background: radial-gradient(135.35% 140.89% at 107.72% -60.35%,
-            rgba(255, 0, 47, 0.4) 0%,
-            rgba(31, 4, 4, 0) 100%),
-        #121116;
     margin: 0 auto;
     width: 100%;
     font-size: 14px;
     font-weight: 400;
     margin: 0;
     line-height: 1.6;
-    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
-        sans-serif;
+    font-family: "Baloo 2", sans-serif;
+    font-optical-sizing: auto;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-.main-wrapper {
-    background-image: url("background.svg");
-    background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    background-size: contain;
+:root {
+    --color-text-primary: #d1d1d1;
+    --color-text-hover: #f0f0f0;
+    --text-large: 60px;
 }

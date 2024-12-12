@@ -1,0 +1,15 @@
+.menu-header-container {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-header {
+    display: flex;
+}
+
+.dash {
+    font-size: var(--text-large);
+    color: var(--color-text-primary); 
+    margin: 0 2rem;
+}
