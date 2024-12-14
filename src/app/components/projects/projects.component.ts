@@ -1,14 +1,14 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ProjectService } from '../project-components/project.service';
+import { ProjectService } from '../../services/project.service';
 import { NgFor, NgIf } from '@angular/common';
-import { ProjectComponent } from "../project/project.component";
+import { ProjectPreviewComponent } from "./project-preview/project-preview.component";
 import { ButtonModule } from 'primeng/button';
 
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [NgFor, ProjectComponent, NgIf, ButtonModule],
+  imports: [NgFor, NgIf, ButtonModule, ProjectPreviewComponent],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })

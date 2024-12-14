@@ -5,7 +5,6 @@
         "description": "This is project 1",
         "status": "In Progress",
         "date": "2020-01-01",
-        "image": "image_not_found.png",
         "github": null,
         "website": null,
         "technologies": null
@@ -16,7 +15,6 @@
         "description": "This is project 2",
         "status": "Active",
         "date": "2020-01-02",
-        "image": "image_not_found.png",
         "github": null,
         "website": null,
         "technologies": null
@@ -27,7 +25,6 @@
         "description": "This is project 3",
         "status": "Active",
         "date": "2020-01-02",
-        "image": "image_not_found.png",
         "github": null,
         "website": null,
         "technologies": null
@@ -38,7 +35,6 @@
         "description": "This is project 4",
         "status": "Active",
         "date": "2020-01-02",
-        "image": "image_not_found.png",
         "github": null,
         "website": null,
         "technologies": null
@@ -49,7 +45,6 @@
         "description": "This is project 5",
         "status": "Active",
         "date": "2020-01-02",
-        "image": "image_not_found.png",
         "github": null,
         "website": null,
         "technologies": null

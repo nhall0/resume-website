@@ -1,14 +1,14 @@
 <div class="projects">
     <div class="projects-container-grid" *ngIf="projectMode == 'grid'">
         <ng-container *ngFor="let project of projectsService.projects">
-            <app-project class="{{projectMode}}" [project]="project"></app-project>
+            <app-project-preview class="{{projectMode}}" [project]="project"></app-project-preview>
         </ng-container>
     </div>
 
     <div class="projects-container {{projectMode}}" *ngIf="projectMode == 'rectangle'">
         <div class="projects-carousel">
             <p-button icon="pi pi-arrow-left" [rounded]="true" [text]="true" [raised]="true" severity="secondary" (click)="currentProject = currentProject - 1" [disabled]="currentProject == 0" />
-            <app-project class="project-rectangle" [project]="projectsService.projects[currentProject]"></app-project>
+            <app-project-preview class="project-rectangle" [project]="projectsService.projects[currentProject]"></app-project-preview>
             <p-button icon="pi pi-arrow-right" [rounded]="true" [text]="true" [raised]="true" severity="secondary" (click)="currentProject = currentProject + 1" [disabled]="currentProject == projectsService.projects.length - 1" />
         </div>
     </div>
