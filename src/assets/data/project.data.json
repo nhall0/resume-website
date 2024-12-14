@@ -2,7 +2,7 @@
     {
         "id": "stable-pathing",
         "title": "Stable Pathmaps",
-        "description": "Creating custom top-down maps/pathing using generative AI.",
+        "description": "Creating custom top-down maps & pathing using generative AI.",
         "status": "In Progress",
         "date": "2020-01-01",
         "github": null,
@@ -43,6 +43,16 @@
         "id": "motobuild.bike",
         "title": "motobuild.bike",
         "description": "A web-app for creating, documenting, and sharing motorcycle builds.",
+        "status": "Active",
+        "date": "2020-01-02",
+        "github": null,
+        "website": null,
+        "technologies": null
+    },
+    {
+        "id": "cat-map",
+        "title": "CatMap",
+        "description": "A fun little project showing off some of my cloud computing knowledge.",
         "status": "Active",
         "date": "2020-01-02",
         "github": null,

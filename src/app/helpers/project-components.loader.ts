@@ -3,6 +3,7 @@ import { GameDevelopmentComponent } from '../components/project-page/project-com
 import { ProxyEditComponent } from '../components/project-page/project-components/proxy-edit/proxy-edit.component';
 import { DialogueCreatorComponent } from '../components/project-page/project-components/dialogue-creator/dialogue-creator.component';
 import { MotobuildBikeComponent } from '../components/project-page/project-components/motobuild.bike/motobuild.bike.component';
+import { CatMapComponent } from '../components/project-page/project-components/cat-map/cat-map.component';
 
 import { Type } from '@angular/core';
 
@@ -11,7 +12,8 @@ export const componentMap : { [key: string]: Type<any> }  = {
   'game-development': GameDevelopmentComponent,
   'proxy-edit': ProxyEditComponent,
   'dialogue-creator': DialogueCreatorComponent,
-  'motobuild.bike': MotobuildBikeComponent
+  'motobuild.bike': MotobuildBikeComponent,
+  'cat-map': CatMapComponent
 };
 
 export const getComponent = (componentName: string) => {
