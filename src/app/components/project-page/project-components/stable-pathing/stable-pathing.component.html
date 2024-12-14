@@ -2,19 +2,18 @@
     <app-project-section [title]="'Lore Dump'">
         <div>
             <p>
-                    This project was originally intended to be just a piece of a larger one. The larger projects goal was to create a game that had unlimited content. Context of the players environment would be 
-                used to generate the game world. If similar contexts from the past were found, a manager would reuse assets. This project was the start of such a system - but the technology was not ready, nor 
-                was my expertise. Quickly, I realized I'd bitten off more than I could chew. Managing the context and then returning something usable to the player ended up being incredibly challenging. Thus, I settled with just the map and item creation piece for such a system. While I understood at the time something like map generation could be done with a much simpler approach, such as a 
-                cellular automata, or a noise function, I wanted to experiment with the latest craze. 
+                This project was originally intended to be much larger, with an entirely different scope. Its goal was to create a game that had unlimited content, fueled by the glorious advent of AI. 
+                The players environment would be parsed into a 'Context' object, which would then be used to generate the game world. If similar contexts from the past were found, a manager would reuse previously generated assets.
+                Quickly, I realized I'd bitten off more than I could chew. Managing the context and then returning something usable to the player ended up being incredibly challenging. Thus, the project sat in stasis after creating the world generation pipeline.
             </p>
         </div>
     </app-project-section>
     <app-project-section [title]="'Procedural Generation'">
         <div>
             <p>
-                I used a Stable Diffusion model to get the base images - see one to the right. Said model was trained on a dataset of DnD maps. The idea was that in the end, a context manager would
-                read the players environmental data and create a prompt that would generate something appropriate. If the player had just through a rusty gate into the side of a cliff - clearly the 
-                outcome would be something akin to a dungeon or cave. The model would then generate a map that would be used to create the game world.
+                I used a Stable Diffusion model to get the base images - see one to the right. Said model was trained on a dataset of DnD maps. The previously mentioned 'Context' would be fed into
+                a text-to-text model, such as ChatGPT/Llama, and would produce a prompt for the environment. If the player had just gone through a rusty gate into the side of a cliff - clearly the 
+                outcome would be something akin to a dungeon or cave. The Stable Diffusion model would then generate a map that would be used to create the game world.
             </p>
         </div>
         <img class="square-image" src="assets/images/projects/stable-pathing/base.png" alt="Stable Diffusion Model Output" />
@@ -22,8 +21,8 @@
     <app-project-section [title]="'Image Processing'" [stacked]="true">
         <div>
             <p>
-                The images were then processed with a series of filters. First, the image would be put through a threshhold algorithm to get high-contrast image. It would then be divided into quarters (or more),
-                and set aside for re-generation. Each quarter is given back to Stable Diffusion - with a similar prompt to the original. Finally, the high-contrast images were used as a mask against the 
+                The images were then processed through a series of filters. First, the image would be put through a threshhold to get high-contrast image. It would then be divided into quarters (or more),
+                and set aside for re-generation. Each quarter is then sent back through the Stable Diffusion model - with descriptors of the target environment. Finally, the high-contrast images were used as a mask against the 
                 newly generated images to carve out a path the player could traverse.
             </p>
         </div>
@@ -33,8 +32,8 @@
         <video class="video" src="assets/images/projects/stable-pathing/demo.mp4" controls></video>
         <div>
             <p>
-                The map image itself was loaded as an overlay resource - then the mask was used as the collision map underneath. This was done in order to have clearly translated graphics, while allowing the
-                player to have a clean, intuitive experience traversing the map. As seen in the demo to the left, shadows and lighting were used in similar manner. You can see terrain and objects all 
+                I used Unity to mock out the design and core-features of the game. The map image itself was loaded as an overlay resource - then the mask was used as the collision map underneath. This was done in order to have clearly translated graphics, while allowing the
+                player to have a clean, intuitive experience traversing the map. As seen in the demo to the left, shadows and lighting were used in similar manner. All terrain and objects were
                 generated via the same prompt pipeline as the map was.
             </p>
         </div>
@@ -42,9 +41,13 @@
     <app-project-section [title]="'Limitations & Thoughts'">
         <div>
             <p>
-                Ultimately, this was a fun experiment rather than a feasible concept. Much of the process, while automated via code, was still done manually. ChatGPT 3.0 was used for Stable Diffusion
+                Needless to say, parts of this project could have been done quite a bit better. The biggest improvement would come from not using AI (blasphemy!) to generate the base maps. AI would only be used
+                to render the veneer of the world. The base map could be generated with a conventional map generation algorithm - my choice would be some cellular automata variant.
+            </p>
+            <p>
+                Ultimately, this was a fun experiment rather than a feasible concept. Much of the process, while automated via code, was still done manually. ChatGPT 3.0 was used for
                 prompt creation, and would often generate inaccurate prompts. The Stable Diffusion model I'd used would also encounter similar issues, generating unusable maps. If I'd been more proficient
-                with training models, I could have likely gotten better results.
+                with training models, I likely could have gotten better results.
             </p>
         </div>
     </app-project-section>
