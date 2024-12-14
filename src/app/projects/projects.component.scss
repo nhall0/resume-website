@@ -1,7 +1,40 @@
+.projects {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .projects-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.projects-container-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 16px; 
+    grid-auto-rows: auto; 
+}
+
+.grid {
     padding: 1vw;
-    margin: 50px 0;
+    width: 40vw;
+    height: 40vw;
+}
+
+.rectangle {
+    width: 50vw;
+}
+
+.projects-carousel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.project-rectangle {
+    flex: 2;
+    margin: 0 30px;
 }

@@ -4,13 +4,14 @@ import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { RippleModule } from 'primeng/ripple';
 import { RouterModule } from '@angular/router';
+import { ScrollPanelModule } from 'primeng/scrollpanel';
 
 import { MenuHeaderComponent } from './menu-header/menu-header.component';
 
 @Component({
     selector: 'app-root',
     standalone: true,
-    imports: [CommonModule, ButtonModule, InputTextModule, RippleModule, MenuHeaderComponent, RouterModule],
+    imports: [CommonModule, ButtonModule, InputTextModule, RippleModule, MenuHeaderComponent, RouterModule, ScrollPanelModule],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss'
 })

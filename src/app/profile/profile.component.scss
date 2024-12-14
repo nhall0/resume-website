@@ -26,7 +26,7 @@ $base-gap: 50px;
 }
 
 .medium {
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .small {
@@ -59,4 +59,16 @@ $base-gap: 50px;
 
 .profile-image {
     border-radius: 50%;
+}
+
+.recent-projects-header {
+    margin:  0 0 50px 0;
+}
+
+.recent-projects {
+    margin: 100px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
