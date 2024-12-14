@@ -1,0 +1,10 @@
+.stable-pathing {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+:host {
+    height: 100%;
+    margin-bottom: 20px;
+}
