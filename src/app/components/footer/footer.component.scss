@@ -7,3 +7,14 @@
     justify-content: space-between;
     color: #fff;
 }
+
+.footer-section {
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+
+.pi-prime { 
+  align-content: center;
+  display: block;
+}
