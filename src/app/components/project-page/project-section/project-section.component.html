@@ -1,3 +1,6 @@
-<div class="project-section">
-    <ng-content></ng-content>
+<div class="project-section-container">
+    <h2 class="project-section-header">{{ title }}</h2>
+    <div class="project-section" [ngStyle]="{'flex-direction': stacked ? 'column' : 'row', 'align-items': stacked ? 'center' : 'right'}">
+        <ng-content></ng-content>
+    </div>
 </div>

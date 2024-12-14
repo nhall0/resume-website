@@ -2,7 +2,7 @@
     {
         "id": "stable-pathing",
         "title": "Stable Pathmaps",
-        "description": "Creating custom top-down maps & pathing using generative AI.",
+        "description": "Creating dynamic top-down maps & pathing using generative AI.",
         "status": "In Progress",
         "date": "2020-01-01",
         "github": null,

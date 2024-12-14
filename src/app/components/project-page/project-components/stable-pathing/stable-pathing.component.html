@@ -1,17 +1,51 @@
 <div class="stable-pathing">
-    <app-project-section>
-        1
+    <app-project-section [title]="'Lore Dump'">
+        <div>
+            <p>
+                    This project was originally intended to be just a piece of a larger one. The larger projects goal was to create a game that had unlimited content. Context of the players environment would be 
+                used to generate the game world. If similar contexts from the past were found, a manager would reuse assets. This project was the start of such a system - but the technology was not ready, nor 
+                was my expertise. Quickly, I realized I'd bitten off more than I could chew. Managing the context and then returning something usable to the player ended up being incredibly challenging. Thus, I settled with just the map and item creation piece for such a system. While I understood at the time something like map generation could be done with a much simpler approach, such as a 
+                cellular automata, or a noise function, I wanted to experiment with the latest craze. 
+            </p>
+        </div>
     </app-project-section>
-    <app-project-section>
-        2
+    <app-project-section [title]="'Procedural Generation'">
+        <div>
+            <p>
+                I used a Stable Diffusion model to get the base images - see one to the right. Said model was trained on a dataset of DnD maps. The idea was that in the end, a context manager would
+                read the players environmental data and create a prompt that would generate something appropriate. If the player had just through a rusty gate into the side of a cliff - clearly the 
+                outcome would be something akin to a dungeon or cave. The model would then generate a map that would be used to create the game world.
+            </p>
+        </div>
+        <img class="square-image" src="assets/images/projects/stable-pathing/base.png" alt="Stable Diffusion Model Output" />
     </app-project-section>
-    <app-project-section>
-        3
+    <app-project-section [title]="'Image Processing'" [stacked]="true">
+        <div>
+            <p>
+                The images were then processed with a series of filters. First, the image would be put through a threshhold algorithm to get high-contrast image. It would then be divided into quarters (or more),
+                and set aside for re-generation. Each quarter is given back to Stable Diffusion - with a similar prompt to the original. Finally, the high-contrast images were used as a mask against the 
+                newly generated images to carve out a path the player could traverse.
+            </p>
+        </div>
+        <img class="image" src="assets/images/projects/stable-pathing/flow.png" alt="Process Flow" />
     </app-project-section>
-    <app-project-section>
-        4
+    <app-project-section [title]="'Game Implementation'">
+        <video class="video" src="assets/images/projects/stable-pathing/demo.mp4" controls></video>
+        <div>
+            <p>
+                The map image itself was loaded as an overlay resource - then the mask was used as the collision map underneath. This was done in order to have clearly translated graphics, while allowing the
+                player to have a clean, intuitive experience traversing the map. As seen in the demo to the left, shadows and lighting were used in similar manner. You can see terrain and objects all 
+                generated via the same prompt pipeline as the map was.
+            </p>
+        </div>
     </app-project-section>
-    <app-project-section>
-        5
+    <app-project-section [title]="'Limitations & Thoughts'">
+        <div>
+            <p>
+                Ultimately, this was a fun experiment rather than a feasible concept. Much of the process, while automated via code, was still done manually. ChatGPT 3.0 was used for Stable Diffusion
+                prompt creation, and would often generate inaccurate prompts. The Stable Diffusion model I'd used would also encounter similar issues, generating unusable maps. If I'd been more proficient
+                with training models, I could have likely gotten better results.
+            </p>
+        </div>
     </app-project-section>
 </div>
