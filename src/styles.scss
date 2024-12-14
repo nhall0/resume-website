@@ -2,4 +2,9 @@
 
 .p-scrollpanel-bar-y {
     width: 10px;
+    border-radius: 10px;
+}
+
+.p-scrollpanel-content {
+    width: calc(100% + 34px);
 }

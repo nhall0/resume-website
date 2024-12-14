@@ -15,12 +15,12 @@
     grid-template-columns: repeat(2, 1fr); 
     gap: 16px; 
     grid-auto-rows: auto; 
+    margin: 40px 0;
 }
 
 .grid {
     padding: 1vw;
-    width: 40vw;
-    height: 40vw;
+    width: 30vw;
 }
 
 .rectangle {

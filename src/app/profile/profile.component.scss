@@ -65,6 +65,10 @@ $base-gap: 50px;
     margin:  0 0 50px 0;
 }
 
+.recent-projects-header:hover {
+    cursor: default;
+}
+
 .recent-projects {
     margin: 100px 0;
     display: flex;

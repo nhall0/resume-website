@@ -1,17 +1,14 @@
 import { Component} from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { ButtonModule } from 'primeng/button';
-import { InputTextModule } from 'primeng/inputtext';
-import { RippleModule } from 'primeng/ripple';
 import { RouterModule } from '@angular/router';
-import { ScrollPanelModule } from 'primeng/scrollpanel';
 
+import { ScrollPanelModule } from 'primeng/scrollpanel';
 import { MenuHeaderComponent } from './menu-header/menu-header.component';
+import { FooterComponent } from "./footer/footer.component";
 
 @Component({
     selector: 'app-root',
     standalone: true,
-    imports: [CommonModule, ButtonModule, InputTextModule, RippleModule, MenuHeaderComponent, RouterModule, ScrollPanelModule],
+    imports: [MenuHeaderComponent, RouterModule, ScrollPanelModule, FooterComponent],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss'
 })
