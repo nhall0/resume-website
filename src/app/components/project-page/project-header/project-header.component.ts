@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Project } from '../../../interfaces/project.model';
 
 @Component({
   selector: 'app-project-header',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './project-header.component.scss'
 })
 export class ProjectHeaderComponent {
-
+  @Input() project: Project | null = null;
 }

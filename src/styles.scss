@@ -7,4 +7,6 @@
 
 .p-scrollpanel-content {
     width: calc(100% + 34px);
+    display: flex;
+    flex-direction: column;
 }

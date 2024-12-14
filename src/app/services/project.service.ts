@@ -14,6 +14,11 @@ export class ProjectService {
     getProjects(): Project[] {
         return this.projects;
     }
+
+    getProject(id: string): Project | null {
+        let project = this.projects.find(project => project.id === id);
+        return project ? project : null
+    }
 }
 
 export function RegisterComponent(key: string): ClassDecorator {
