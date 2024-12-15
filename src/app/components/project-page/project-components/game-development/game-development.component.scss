@@ -16,14 +16,12 @@
     max-width: 40vh;
 }
 
-.image {
-    border-radius: 10px;
-    max-width: 80%;
-    background-color: black;
+.game-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.video {
-    border-radius: 20px;
-    background-color: black;
-    width: 40vw;
+.game-info h3 {
+    margin: 0;
 }
