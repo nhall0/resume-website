@@ -57,8 +57,13 @@ $base-gap: 50px;
     margin-right: 10px;
 }
 
-.profile-image {
-    border-radius: 50%;
+.profile-image-wrapper {
+    position: relative; 
+    overflow: hidden; 
+    border-radius: 50%; 
+    height: 25vw;
+    width: 25vw;
+    background-color: rgba(0, 0, 0, 0.135);
 }
 
 .recent-projects-header {
