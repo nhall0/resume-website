@@ -1,0 +1,29 @@
+.game-development {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    font-size: clamp(1.2rem, 1.25vw, 2rem);
+}
+
+:host {
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.square-image {
+    border-radius: 10px;
+    max-height: 40vh;
+    max-width: 40vh;
+}
+
+.image {
+    border-radius: 10px;
+    max-width: 80%;
+    background-color: black;
+}
+
+.video {
+    border-radius: 20px;
+    background-color: black;
+    width: 40vw;
+}

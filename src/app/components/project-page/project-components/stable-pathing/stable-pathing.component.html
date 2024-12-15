@@ -12,7 +12,7 @@
         <div>
             <p>
                 I used a Stable Diffusion model to get the base images - see one to the right. Said model was trained on a dataset of DnD maps. The previously mentioned 'Context' would be fed into
-                an RAG model such as ChatGPT, and would produce a prompt for the environment. If the player had just gone through a rusty gate into the side of a cliff - clearly the 
+                an RAG model such as ChatGPT, and would produce a prompt for the environment. If the player had just gone through a rusty gate into the side of a cliff - the 
                 outcome would be something akin to a dungeon or cave. The Stable Diffusion model would then generate a map that would be used to create the game world.
             </p>
         </div>
@@ -22,7 +22,7 @@
         <div>
             <p>
                 The images were then processed through a series of filters. First, the image would be put through a threshhold to get high-contrast image. It would then be divided into quarters (or more),
-                and set aside for re-generation. Each quarter is then sent back through the Stable Diffusion model - with descriptors of the target environment. Finally, the high-contrast images were used as a mask against the 
+                and set aside for re-generation. Each quarter is then sent back through the Stable Diffusion model and upscaled - with descriptors of the target environment. Finally, the high-contrast images were used as a mask against the 
                 newly generated images to carve out a path the player could traverse.
             </p>
         </div>
@@ -33,7 +33,7 @@
         <div>
             <p>
                 I used Unity to mock out the design and core-features of the game. The map image itself was loaded as an overlay resource - then the mask was used as the collision map underneath. This was done in order to have clearly translated graphics, while allowing the
-                player to have a clean, intuitive experience traversing the map. As seen in the demo to the left, shadows and lighting were used in similar manner. All terrain and objects were
+                player to have a clean, intuitive experience traversing the map. As seen in the demo to the left, shadows and lighting were produced via a similar manner. All terrain and objects were
                 generated via the same prompt pipeline as the map was.
             </p>
         </div>
