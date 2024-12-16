@@ -8,7 +8,12 @@ export class ProjectService {
     projects: Project[];
 
     constructor() {
-        this.projects = [...(projectData as Project[])];
+        this.projects = [];
+        for (let project of projectData) {
+            if(project.enabled) {
+                this.projects.push(project);
+            }
+        }
     }
 
     getProjects(): Project[] {

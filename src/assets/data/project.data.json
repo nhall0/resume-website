@@ -3,60 +3,48 @@
         "id": "stable-pathing",
         "title": "Stable Pathmaps",
         "description": "Creating dynamic top-down maps & pathing using generative AI.",
-        "status": "In Progress",
-        "date": "2020-01-01",
         "github": null,
         "website": null,
-        "technologies": null
+        "enabled": true
     },
     {
         "id": "game-development",
         "title": "Game Jams",
         "description": "A collection of my games created during game jams.",
-        "status": "Active",
-        "date": "2020-01-02",
         "github": null,
         "website": null,
-        "technologies": null
+        "enabled": true
     },
     {
         "id": "proxy-edit",
         "title": "Proxy Edit",
         "description": "A bulk-image editor with powerful features such as image detection and manipulation.",
-        "status": "Active",
-        "date": "2020-01-02",
         "github": null,
         "website": null,
-        "technologies": null
+        "enabled": false
     },
     {
         "id": "dialogue-creator",
         "title": "Dialogue Creation Kit",
         "description": "An open-source application for game developers to create and export complex dialogue trees.",
-        "status": "Active",
-        "date": "2020-01-02",
         "github": null,
         "website": null,
-        "technologies": null
+        "enabled": false
     },
     {
         "id": "motobuild.bike",
         "title": "motobuild.bike",
         "description": "A web-app for creating, documenting, and sharing motorcycle builds.",
-        "status": "Active",
-        "date": "2020-01-02",
         "github": null,
         "website": null,
-        "technologies": null
+        "enabled": false
     },
     {
         "id": "cat-map",
         "title": "CatMap",
         "description": "A fun little project showing off some of my cloud computing knowledge.",
-        "status": "Active",
-        "date": "2020-01-02",
         "github": null,
         "website": null,
-        "technologies": null
+        "enabled": false
     }
 ]
