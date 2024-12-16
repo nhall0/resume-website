@@ -7,9 +7,14 @@
 
     <div class="projects-container {{projectMode}}" *ngIf="projectMode == 'rectangle'">
         <div class="projects-carousel">
-            <p-button icon="pi pi-arrow-left" [rounded]="true" [text]="true" [raised]="true" severity="secondary" (click)="currentProject = currentProject - 1" [disabled]="currentProject == 0" />
-            <app-project-preview class="project-rectangle" [project]="projectsService.projects[currentProject]"></app-project-preview>
-            <p-button icon="pi pi-arrow-right" [rounded]="true" [text]="true" [raised]="true" severity="secondary" (click)="currentProject = currentProject + 1" [disabled]="currentProject == projectsService.projects.length - 1" />
+            <p-button icon="pi pi-arrow-left" [rounded]="true" [text]="true" [raised]="true" severity="secondary" (click)="iterateProject(false); buttonPressCooldown=true" />
+            <div class="preview-container">
+                <app-project-preview [project]="projectsService.projects[currentProject]" [showProgressBar]="!buttonPressCooldown"></app-project-preview>
+                <div class="progress-container" [ngStyle]="{'opacity': buttonPressCooldown ? 0 : 1, 'height': buttonPressCooldown ? 0 : 5}">
+                    <div class="progress-bar" [ngStyle]="{'width':(ticksElapsed/ticksToLoad*100)+'%'}"></div>
+                </div>
+            </div>
+            <p-button icon="pi pi-arrow-right" [rounded]="true" [text]="true" [raised]="true" severity="secondary" (click)="iterateProject(true); buttonPressCooldown=true" />
         </div>
     </div>
 </div>
