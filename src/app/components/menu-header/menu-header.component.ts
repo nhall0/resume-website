@@ -15,9 +15,10 @@ import { NgFor, NgIf } from '@angular/common';
 export class MenuHeaderComponent implements OnInit {
   menuItems: MenuItem[] = [
     { title: 'home', route: '', icon: 'home' },
-    { title: 'projects', route: 'projects', icon: 'info' },
-    { title: 'resume', route: 'resume', icon: 'email' }
+    { title: 'projects', route: 'projects', icon: 'info' }
   ];
+
+  //{ title: 'resume', route: 'resume', icon: 'email' }
 
   constructor() { }
 
