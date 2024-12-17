@@ -1,1 +1,63 @@
-<p>dialogue-creator works!</p>
+<div class="dialogue-creator">
+    <app-project-section [title]="'Intro'">
+        <div>
+            <p>
+                This project was mainly inspired by 'Bethesda-style' dialogue systems. I wanted to make a tool that could be useful to write in such a style, all bells and whistles attached. The 
+                application itself is quite simple, you create a node by clicking on the button within the canvas, and start writing your dialogue. The node auto-populates new routes with the options 
+                you write, and you can create new nodes that connect to those routes. Dialogue can be exported on the fly, and imported back. There are also Godot + Unity integrations, which parse 
+                the dialogue into a format one can use to integrate into their game/application.
+            </p>
+        </div>
+    </app-project-section>
+    <app-project-section [title]="'Structure'">
+        <div style="flex:1">
+            <p>
+                Incredibly simple. Behind the scenes all it uses is a tree structure. I suppose the more explicit data-structure would be a linked list with each node having N children, where N is the number of
+                options the node has. Each node has a slew of metadata. Certain boolean flags can be set and checked upon either arriving at a node or selecting an options - this 
+                is in the case you wanted to make a reactive choice. I.E - you visit someone for the second time, or you have a certain item in your inventory. The boolean flag system also allows
+                for flags to be set outside of the application itself, giving the end-user a more useful port of entry for their own game logic.
+            </p>
+        </div>
+        <div>
+            <div class="square-image wrapper" style="width: 30vw;">
+                <img class="inner-image" src="assets/images/projects/dialogue-creator/example.JPG"/>
+            </div>
+        </div>
+    </app-project-section>
+    <app-project-section [title]="'Tech'">
+        <div>
+            <div class="square-image wrapper">
+                <img class="inner-image" src="assets/images/projects/dialogue-creator/godot.png"/>
+            </div>
+        </div>
+        <div style="flex:1">
+            <p>
+                Developed in Godot, using GDScript. For those who havent worked with it, GDScript is very similar to Python. For those who don't know what Godot is at all, it's an open-source game-engine. I chose it because 
+                I thought it'd be cool to write a tool in the same language I'd be using to integrate it into a game - very much inspired by the engines own origins (Godot is actually coded in Godot). 
+                Exports are in JSON - chances are either in the future, or next time I do something similar, I'll try and write my own format. Check out the codebase in the link above.
+            </p>
+        </div>
+    </app-project-section>
+    <app-project-section [title]="'Demo'">
+        <div style="flex:2">
+            <p>
+               Watch this brief demo to the right. I show off the basic flow of the application. I create a few nodes, connect them, and export the dialogue. Notice how the nodes are connected - 
+               there is a slight amount of visual jank - but it's palatable. The application is very much a prototype, and I'm happy with how it turned out.
+            </p>
+        </div>
+        <div class="video wrapper" style="height: 15vw;">
+            <video class="inner-image" src="assets/images/projects/dialogue-creator/app_demo.mp4" controls></video>
+        </div>
+    </app-project-section>
+    <app-project-section [title]="'Usage'">
+        <div class="video wrapper" style="height: 15vw;">
+            <video class="inner-image" src="assets/images/projects/dialogue-creator/app_integration.mp4" controls></video>
+        </div>
+        <div style="flex:2">
+            <p>
+              Finally, check out this demo on the left, where I show off a potential Godot integration. Everything you see there is a small project I made to test out the said integration. Still 
+              needs a bit of tweaking before I'm comfortable handing it off, but it works alright. All dialogue text you see in the game is from the dialogue creator.
+            </p>
+        </div>
+    </app-project-section>
+</div>

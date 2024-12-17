@@ -1,0 +1,11 @@
+.dialogue-creator {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    font-size: clamp(1.2rem, 1.25vw, 2rem);
+}
+
+:host {
+    height: 100%;
+    margin-bottom: 20px;
+}
