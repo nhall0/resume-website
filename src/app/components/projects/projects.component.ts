@@ -40,7 +40,7 @@ export class ProjectsComponent implements OnInit{
   iterateProjectLoopEvery10Seconds() {
     setInterval(() => {
       this.ticksElapsed += 1;
-      if(!this.buttonPressCooldown && this.ticksElapsed >= this.ticksToLoad) {
+      if(!this.buttonPressCooldown && this.ticksElapsed >= this.ticksToLoad+2) { //+2 for buffer
         this.iterateProject(true);
         this.ticksElapsed = 0;
       }
