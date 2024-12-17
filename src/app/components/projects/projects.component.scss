@@ -21,7 +21,6 @@
 .grid {
     padding: 1vw;
     width: 30vw;
-    height: 30vh
 }
 
 .rectangle {
@@ -35,7 +34,24 @@
     width: 100%;
 }
 
-.project-rectangle {
+.preview-container {
     flex: 2;
     margin: 0 30px;
 }
+
+.progress-container {
+    width: 100%;
+    background-color: #ffffff13;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    height: 7px;
+    opacity: 1;
+    transition: opacity 0.4s ease, height 0.2s ease;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #5dff4fa4;
+    transition: width 0.2s ease;
+  }

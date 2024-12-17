@@ -29,7 +29,7 @@
         "description": "An open-source application for game developers to create and export complex dialogue trees.",
         "github": null,
         "website": null,
-        "enabled": false
+        "enabled": true
     },
     {
         "id": "motobuild.bike",
@@ -43,6 +43,14 @@
         "id": "cat-map",
         "title": "CatMap",
         "description": "A fun little project showing off some of my cloud computing knowledge.",
+        "github": null,
+        "website": null,
+        "enabled": false
+    },
+    {
+        "id": "git-goblin",
+        "title": "GitGoblin",
+        "description": "GIT GOBLIN!",
         "github": null,
         "website": null,
         "enabled": false

@@ -1,4 +1,4 @@
-<div *ngIf="project" class="project-container" (click)="goToProject()">
+<div *ngIf="project" class="project-container" (click)="goToProject()" [ngStyle]="{'border-radius': showProgressBar ? '10px 10px 0 0' : '10px'}">
     <div class="project-header">
         <h1>{{ project.title }}</h1>
         <p>{{ project.description }}</p>
