@@ -57,7 +57,7 @@ export class ProjectsComponent implements OnInit{
       } 
     } 
     else {
-      if(this.currentProject < 0) {
+      if(this.currentProject == 0) {
         this.currentProject = this.projectsService.projects.length - 1;
       }
       else {
