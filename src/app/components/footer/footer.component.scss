@@ -1,7 +1,9 @@
+@import "../../../styles.scss";
+
 .footer {
     background-color: #131920;
     padding: 30px;
-    width: 100%;
+    width: $scroll-panel-width;
     border-top: 1px solid #212f3b;
     display: flex;
     justify-content: space-between;
