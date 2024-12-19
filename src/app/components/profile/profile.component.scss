@@ -1,3 +1,5 @@
+@import '../../../styles.scss';
+
 $base-gap: 50px;
 
 .profile-container {
@@ -11,13 +13,13 @@ $base-gap: 50px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    text-align: right;
+    text-align: left;
     flex: 1;
 }
 
 .profile-image-container {
     display: flex;
-    justify-content: left;
+    justify-content: right;
     fleX: 1;
 }
 
@@ -80,4 +82,23 @@ $base-gap: 50px;
     justify-content: center;
     flex-direction: column;
     text-align: center;
+}
+
+@media screen and (max-width: $mobile-width) {
+    .profile-container {
+        flex-direction: column;
+    }
+
+    .profile-info-container {
+        text-align: center;
+    }
+
+    .profile-image-container {
+        justify-content: center;
+    }
+
+    .profile-image-wrapper {
+        height: 50vw;
+        width: 50vw;
+    }
 }

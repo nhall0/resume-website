@@ -1,3 +1,5 @@
+@import '../../../styles.scss';
+
 .projects {
     width: 100%;
     display: flex;
@@ -20,7 +22,7 @@
 
 .grid {
     padding: 1vw;
-    width: 30vw;
+    width: 40vw;
 }
 
 .rectangle {
@@ -54,4 +56,10 @@
     width: 0;
     background-color: #5dff4fa4;
     transition: width 0.2s ease;
+  }
+
+  @media screen and (max-width: $mobile-width) {
+    .rectangle {
+        width: 90vw;
+    } 
   }
