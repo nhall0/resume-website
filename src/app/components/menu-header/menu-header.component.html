@@ -5,4 +5,16 @@
             <span class="dash" *ngIf="!isLastItem(item)">-</span>
         </ng-container>
     </div>
+    <div class="mobile-menu-header">
+        <div class="mobile-menu-icon-container">
+            <span class="pi pi-bars" (click)="showMobileItems = !showMobileItems"></span>
+        </div>
+        <div class="mobile-menu-items" *ngIf="showMobileItems">
+            <ng-container *ngFor="let item of menuItems">
+                <div class="mobile-menu-item">
+                    <app-menu-item [item] = item></app-menu-item>
+                </div>
+            </ng-container>
+        </div>
+    </div>
 </div>

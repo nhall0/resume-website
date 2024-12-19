@@ -1,10 +1,10 @@
 .menu-header-container {
-    padding-top: 50px;
     display: flex;
     justify-content: center;
 }
 
 .menu-header {
+    padding-top: 50px;
     display: flex;
 }
 
@@ -16,4 +16,49 @@
 
 .dash:hover {
     cursor: default;
+}
+
+.mobile-menu-header {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--background-color-secondary);
+}
+
+.mobile-menu-icon-container {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--background-color-primary);
+}
+
+.mobile-menu-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-menu-item {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid var(--background-color-primary);
+}
+
+.pi-bars {
+    font-size: var(--text-large);
+    color: var(--color-text-primary);
+    margin: 2rem;
+}
+
+.pi-bars:hover {
+    cursor: pointer;
+    color: var(--color-text-secondary);
+}
+
+@media screen and (max-width: 768px) {
+    .menu-header {
+        display: none;
+    }
+
+    .mobile-menu-header {
+        display: flex;
+    }
 }
