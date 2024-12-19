@@ -1,5 +1,7 @@
 @import "primeicons/primeicons.css";
 
+$mobile-width: 768px;
+
 .p-scrollpanel-bar-y {
     width: 10px;
     border-radius: 10px;
@@ -43,4 +45,18 @@
     width: 40vw;
     border-radius: 20px;
     background-color: black;
+}
+
+@media screen and (max-width: $mobile-width) {
+    .square-image{
+        width: 80vw;
+        height: 80vw;
+    }
+    .image {
+        width: 80vw;
+        height: 20vw;
+    }
+    .video {
+        width: 80vw;
+    }
 }

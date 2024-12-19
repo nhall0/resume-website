@@ -23,7 +23,6 @@ body {
 }
 
 :root {
-    --mobile-width: 768px;
     --color-text-primary: #b2b2b2;
     --color-text-hover: #f0f0f0;
     --background-color-primary: rgb(21, 22, 31);
