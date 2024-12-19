@@ -1,6 +1,7 @@
 @import "primeicons/primeicons.css";
 
 $mobile-width: 768px;
+$scroll-panel-width: calc(100% + 18px);
 
 .p-scrollpanel-bar-y {
     width: 10px;
@@ -8,7 +9,6 @@ $mobile-width: 768px;
 }
 
 .p-scrollpanel-content {
-    width: calc(100% + 34px);
     display: flex;
     flex-direction: column;
 }
