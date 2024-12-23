@@ -1,0 +1,27 @@
+:host {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--background-color-secondary);
+    border-radius: 10px;
+}
+
+.dialogue-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.text-container {
+    font-weight: bold;
+}
+
+.option:hover {
+    cursor: pointer;
+    background-color: var(--background-color-primary);
+    border-radius: 5px;
+}
+
+.option-text {
+    margin-left: 5px;
+}
+

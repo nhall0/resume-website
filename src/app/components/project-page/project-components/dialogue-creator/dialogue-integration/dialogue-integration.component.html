@@ -1,0 +1,10 @@
+<div class="dialogue-container">
+    <div class="text-container">
+        {{ currentDialogue }}
+    </div>
+    <div class="options-container">
+        <div class="option" *ngFor="let option of currentOptions" (click)="selectNodeById(option.destination)">
+            <div class="option-text">{{ option.text}}</div>
+        </div>
+    </div>
+</div>

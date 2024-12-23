@@ -12,10 +12,10 @@
     <app-project-section [title]="'Structure'">
         <div style="flex:1">
             <p>
-                Incredibly simple. Behind the scenes all it uses is a tree structure. I suppose the more explicit data-structure would be a linked list with each node having N children, where N is the number of
-                options the node has. Each node has a slew of metadata. Certain boolean flags can be set and checked upon either arriving at a node or selecting an options - this 
+                Incredibly simple, it's basic graph logic. The more explicit data-structure would be a digraph, where the degree of each vertex is the number of options leading away from that node + 1.
+                Each node has a slew of metadata. Certain boolean flags can be set and checked upon either arriving at a node or selecting an options - this 
                 is in the case you wanted to make a reactive choice. I.E - you visit someone for the second time, or you have a certain item in your inventory. The boolean flag system also allows
-                for flags to be set outside of the application itself, giving the end-user a more useful port of entry for their own game logic.
+                for flags to be set outside of the application itself, giving the end-user a port of entry for their own game logic.
             </p>
         </div>
         <div>
@@ -49,15 +49,11 @@
             <video class="inner-image" src="assets/images/projects/dialogue-creator/app_demo.mp4" controls></video>
         </div>
     </app-project-section>
+    
     <app-project-section [title]="'Usage'">
-        <div class="video wrapper" style="height: 15vw;">
-            <video class="inner-image" src="assets/images/projects/dialogue-creator/app_integration.mp4" controls></video>
-        </div>
-        <div style="flex:2">
-            <p>
-              Finally, check out this demo on the left, where I show off a potential Godot integration. Everything you see there is a small project I made to test out the said integration. Still 
-              needs a bit of tweaking before I'm comfortable handing it off, but it works alright. All dialogue text you see in the game is from the dialogue creator.
-            </p>
-        </div>
+        <app-dialogue-integration></app-dialogue-integration>
+        <p>
+            This is an exported .cutscene file. I did a quick Angular integration to show it off. Check out the component in the repository.
+         </p>
     </app-project-section>
 </div>
