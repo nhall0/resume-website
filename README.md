@@ -1,3 +1,2 @@
 # Resume Website
-
-url here lol
+See the deployed website [here](https://www.niklashallstein.dev/).
