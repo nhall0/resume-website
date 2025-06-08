@@ -13,7 +13,7 @@ export class ProfileComponent {
   name: string = 'Niklas Hallstein';
   title: string = 'Full-Stack Software Developer';
   email: string = 'niklas@cgcg.biz';
-  workplace: string = 'Cyber Guardian Consulting Group';
+  workplace: string = 'FileScience';
   position: string = 'Engineer I';
 
   linkedin: string = 'https://www.linkedin.com/in/niklas-hallstein-980234335/';

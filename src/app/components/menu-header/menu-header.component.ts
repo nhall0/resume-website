@@ -17,7 +17,8 @@ export class MenuHeaderComponent implements OnInit {
   //Const
   menuItems: MenuItem[] = [
     { title: 'home', route: '', icon: 'home' },
-    { title: 'projects', route: 'projects', icon: 'info' }
+    { title: 'projects', route: 'projects', icon: 'info' },
+    { title: 'resume', route: 'resume', icon: 'article' }
   ];
 
   //Vars
