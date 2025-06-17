@@ -8,8 +8,9 @@
     <div class="mobile-menu-header">
         <div class="mobile-menu-icon-container">
             <span class="pi pi-bars" (click)="showMobileItems = !showMobileItems"></span>
+            <span class="path">{{currentPath}}</span>
         </div>
-        <div class="mobile-menu-items" *ngIf="showMobileItems">
+        <div class="mobile-menu-items" *ngIf="showMobileItems" @fade>
             <ng-container *ngFor="let item of menuItems">
                 <div class="mobile-menu-item">
                     <app-menu-item [item] = item></app-menu-item>
