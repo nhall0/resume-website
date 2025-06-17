@@ -14,7 +14,7 @@ export class ProfileComponent {
   title: string = 'Full-Stack Software Developer';
   email: string = 'niklas@cgcg.biz';
   workplace: string = 'FileScience';
-  position: string = 'Engineer I';
+  position: string = 'Engineer II';
 
   linkedin: string = 'https://www.linkedin.com/in/niklas-hallstein-980234335/';
   github: string = 'https://github.com/nhall0'

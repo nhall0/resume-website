@@ -9,3 +9,10 @@
     color: var(--color-text-hover);
     cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+    .menu-item {
+        font-size: var(--text-small);
+        margin: 10px;
+    }
+}
